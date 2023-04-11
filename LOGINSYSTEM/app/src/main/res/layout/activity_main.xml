@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#001220"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="LOGIN"
+
+        android:textColor="#FA7268"
+        android:textSize="40sp"
+        android:textStyle="italic|bold" />
+
+    <EditText
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="35dp"
+        android:hint="username"
+        android:textColorHint="#FA7268"
+        android:background="@drawable/text_corner"
+        android:padding="15dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/textRollno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="35dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColorHint="#FA7268"
+
+        android:background="@drawable/text_corner"
+        android:padding="15dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+
+
+
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:gravity="center"
+        android:background="@drawable/btn_back"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textError"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#FA7268"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wave"/>
+
+
+</LinearLayout>

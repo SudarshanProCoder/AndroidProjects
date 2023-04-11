@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTENT PROVIDER"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#631086"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginTop="250dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:hint="Name"
+            android:textSize="25sp"
+            android:textColor="#B7CB46"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/roll_no"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:hint="Roll NO"
+            android:textSize="25sp"
+            android:textColor="#B7CB46"/>
+        <Button
+            android:id="@+id/add_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:text="ADD DATA"
+            android:textSize="25sp"/>
+        <Button
+            android:id="@+id/retrive_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:text="RETRIVE DATA"
+            android:textSize="25sp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

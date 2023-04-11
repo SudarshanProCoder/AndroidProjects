@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#001220"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="SQLite Database"
+        android:textColor="#FA7268"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="35dp"
+        android:hint="Name"
+        android:textColorHint="#FA7268"
+        android:background="@drawable/text_corner"
+        android:padding="15dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/textRollno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="35dp"
+        android:hint="Roll No"
+        android:textColorHint="#FA7268"
+
+        android:background="@drawable/text_corner"
+        android:padding="15dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/textClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="35dp"
+        android:hint="Class"
+        android:textColorHint="#FA7268"
+
+        android:background="@drawable/text_corner"
+        android:padding="15dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGender"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:padding="5dp"
+        android:layout_marginRight="35dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/male"
+                android:buttonTint="#FA7268"
+                android:layout_marginHorizontal="50dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:buttonTint="#FA7268"
+                android:id="@+id/female"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Elective Subject"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+    <Spinner
+        android:id="@+id/electiveSubjects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_corner"
+        android:padding="15dp"
+        android:backgroundTint="#FFFFFF"
+        android:popupBackground="#FA7268"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        />
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:gravity="center"
+        android:background="@drawable/btn_back"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wave"/>
+
+
+</LinearLayout>

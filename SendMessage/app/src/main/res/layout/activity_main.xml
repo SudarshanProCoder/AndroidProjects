@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#001220"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="SEND SMS"
+
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:textColor="#c62368"
+       android:textSize="30sp"
+       android:layout_marginTop="100dp"
+       />
+
+   <EditText
+       android:background="@drawable/text_corner"
+       android:padding="15dp"
+       android:textColorHint="#c62368"
+       android:id="@+id/numberText"
+       android:textColor="#FBFBFB"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Enter Phone Number"
+       android:inputType="number"
+       android:layout_marginLeft="35dp"
+       android:layout_marginRight="35dp"
+       android:textSize="20sp"
+       android:layout_marginTop="50dp"
+       />
+    <EditText
+        android:background="@drawable/text_corner"
+        android:padding="15dp"
+        android:textColorHint="#c62368"
+        android:textColor="#FBFBFB"
+        android:id="@+id/messageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter The Message"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textSize="20sp"
+        />
+        <Button
+            android:background="@drawable/btn_back"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEND SMS"
+            android:textSize="20sp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/sendSms"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wave"
+        />
+
+</LinearLayout>

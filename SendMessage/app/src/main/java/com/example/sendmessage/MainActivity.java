@@ -35,7 +35,9 @@ public class MainActivity extends AppCompatActivity {
 
         sendBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
+
                 sendSMSMessage();
+
             }
         });
     }

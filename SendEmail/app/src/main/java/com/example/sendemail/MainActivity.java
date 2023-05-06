@@ -1,5 +1,6 @@
 package com.example.sendemail;
 
+import android.annotation.SuppressLint;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
@@ -8,13 +9,21 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
-    @Override
+
+    EditText to, message, subject;
+
+    @SuppressLint("MissingInflatedId")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        to = findViewById(R.id.textTo);
+        message = findViewById(R.id.textMessage);
+        subject = findViewById(R.id.textSubject);
 
         Button startBtn = (Button) findViewById(R.id.sendEmail);
         startBtn.setOnClickListener(new View.OnClickListener() {
@@ -26,16 +35,19 @@ public class MainActivity extends Activity {
 
     protected void sendEmail() {
         Log.i("Send email", "");
-        String[] TO = {"sudarshandate21@gmail.com"};
-        String[] CC = {""};
+        String TO = to.getText().toString();
+        String emailTo[] = TO.split(",");
+
+       String subjectEmail = subject.getText().toString();
+       String messageEmail = message.getText().toString();
+
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
 
         emailIntent.setData(Uri.parse("mailto:"));
-        emailIntent.setType("text/plain");
-        emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
-        emailIntent.putExtra(Intent.EXTRA_CC, CC);
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "HI");
-        emailIntent.putExtra(Intent.EXTRA_TEXT, "EMAIL SEND USING ANDROID APP");
+        emailIntent.setType("text/rfc822");
+        emailIntent.putExtra(Intent.EXTRA_EMAIL,emailTo);
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, subjectEmail);
+        emailIntent.putExtra(Intent.EXTRA_TEXT, messageEmail);
 
         try {
             startActivity(Intent.createChooser(emailIntent, "Send mail..."));

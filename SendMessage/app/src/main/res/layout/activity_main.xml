@@ -30,6 +30,8 @@
        android:layout_height="wrap_content"
        android:hint="Enter Phone Number"
        android:inputType="number"
+       android:ems="10"
+
        android:layout_marginLeft="35dp"
        android:layout_marginRight="35dp"
        android:textSize="20sp"

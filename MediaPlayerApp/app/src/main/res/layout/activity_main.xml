@@ -19,18 +19,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pause"/>
-    <Button
-        android:layout_gravity="center"
-        android:id="@+id/videoPlay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Video Play"/>
-    <VideoView
 
-        android:id="@+id/videoView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true" />
 
 </LinearLayout>

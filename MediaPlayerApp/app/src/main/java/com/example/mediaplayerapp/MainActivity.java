@@ -13,7 +13,7 @@ import android.widget.VideoView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button play, pause, vedioPlay;
+    Button play, pause;
     MediaPlayer mediaPlayer;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -22,9 +22,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         play = findViewById(R.id.playMusic);
         pause = findViewById(R.id.pauseMusic);
-        vedioPlay = findViewById(R.id.videoPlay);
 
-        mediaPlayer = MediaPlayer.create(this, R.raw.music);
+        mediaPlayer = MediaPlayer.create(this, R.raw.s);
 
         play.setOnClickListener(View ->{
             mediaPlayer.start();
@@ -32,22 +31,7 @@ public class MainActivity extends AppCompatActivity {
         pause.setOnClickListener(View ->{
             mediaPlayer.pause();
         });
-        vedioPlay.setOnClickListener(View ->{
 
-            VideoView videoView =(VideoView)findViewById(R.id.videoView1);
-
-            MediaController mediaController= new MediaController(this);
-            mediaController.setAnchorView(videoView);
-
-            String path = "android.resource://com.example.mediaplayerapp/" + R.raw.vi;
-            Uri uri=Uri.parse(path);
-
-
-            videoView.setMediaController(mediaController);
-            videoView.setVideoURI(uri);
-            videoView.requestFocus();
-            videoView.start();
-        });
 
 
 
